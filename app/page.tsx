@@ -94,9 +94,9 @@ export default function Home() {
           <span className="brand-mark">
             <Heart size={15} fill="currentColor" />
           </span>{" "}
-          uma surpresa <span className="brand-dot">.</span>
+          <span className="brand-dot"></span>
         </div>
-        <span className="top-note">FEITO COM carinho</span>
+        <span className="top-note"></span>
       </header>
       <section className="card-wrap">
         <div className="progress">
