@@ -8,7 +8,7 @@ type Vibe = 'Cinema' | 'Jantar' | 'Passeio' | 'Praia' | 'Boliche' | 'Noite';
 const foods: {name: Food; icon: string}[] = [{name:'Sushi',icon:'🍣'},{name:'Pizza',icon:'🍕'},{name:'Hambúrguer',icon:'🍔'},{name:'Massas',icon:'🍝'},{name:'Tacos',icon:'🌮'},{name:'Sorvete',icon:'🍦'}];
 const vibes: {name: Vibe; icon: string}[] = [{name:'Cinema',icon:'🎬'},{name:'Jantar',icon:'🍽️'},{name:'Passeio',icon:'🌆'},{name:'Praia',icon:'🏖️'},{name:'Boliche',icon:'🎳'},{name:'Noite',icon:'🌙'}];
 // Cole aqui o link do formulário, ex.: https://formspree.io/f/abc123
-const FORMSPREE_URL = '';
+const FORMSPREE_URL = 'https://formspree.io/f/mljjvpzw';
 function Avatar({name, className='avatar'}:{name:string;className?:string}) { return <Image className={className} src={`${process.env.NEXT_PUBLIC_BASE_PATH}/genmoji/${name}.png`} alt="Genmoji personalizado" width={240} height={240} priority />; }
 export default function Home() {
   const [step,setStep] = useState(0);
