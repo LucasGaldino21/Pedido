@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { CalendarDays, Clock3, Heart, MapPin, Music2, Sparkles } from 'lucide-react';
 
 type Food = 'Sushi' | 'Pizza' | 'Hambúrguer' | 'Massas' | 'Tacos' | 'Sorvete';
-type Vibe = 'Cinema' | 'Jantar' | 'Passeio' | 'Praia' | 'Boliche' | 'Noite';
+type Vibe = 'Cinema' | 'Jantar' | 'Parque' | 'Natureza' | 'Boliche' | 'Noite';
 const foods: {name: Food; icon: string}[] = [{name:'Sushi',icon:'🍣'},{name:'Pizza',icon:'🍕'},{name:'Hambúrguer',icon:'🍔'},{name:'Massas',icon:'🍝'},{name:'Tacos',icon:'🌮'},{name:'Sorvete',icon:'🍦'}];
-const vibes: {name: Vibe; icon: string}[] = [{name:'Cinema',icon:'🎬'},{name:'Jantar',icon:'🍽️'},{name:'Passeio',icon:'🌆'},{name:'Praia',icon:'🏖️'},{name:'Boliche',icon:'🎳'},{name:'Noite',icon:'🌙'}];
+const vibes: {name: Vibe; icon: string}[] = [{name:'Cinema',icon:'🎬'},{name:'Jantar',icon:'🍽️'},{name:'Parque',icon:'🎢'},{name:'Natureza',icon:'🌲'},{name:'Boliche',icon:'🎳'},{name:'Noite',icon:'🌙'}];
 // Cole aqui o link do formulário, ex.: https://formspree.io/f/abc123
 const FORMSPREE_URL = 'https://formspree.io/f/mljjvpzw';
 function Avatar({name, className='avatar'}:{name:string;className?:string}) { return <Image className={className} src={`${process.env.NEXT_PUBLIC_BASE_PATH}/genmoji/${name}.png`} alt="Genmoji personalizado" width={240} height={240} priority />; }
